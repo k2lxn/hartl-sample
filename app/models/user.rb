@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false } #Rails assumes "true" when you pass another argument
   
   has_secure_password
+  validates :password, presence: true, length: { minimum: 6 }
 end
