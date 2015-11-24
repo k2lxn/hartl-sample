@@ -34,6 +34,7 @@ textarea {
 }
 
 
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -148,6 +149,23 @@ aside {
 }
 
 
+/* forms */
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
 
 
 /* miscellaneous */
